@@ -120,7 +120,7 @@ export default function HeroSection() {
                     <Button
                       size="lg"
                       className="rounded-xl px-5 text-base"
-                      disabled
+                      onClick={(e) => e.preventDefault()}
                     >
                       <span className="text-nowrap">{t('primary')}</span>
                     </Button>
@@ -130,7 +130,7 @@ export default function HeroSection() {
                     size="lg"
                     variant="outline"
                     className="h-10.5 rounded-xl px-5"
-                    disabled
+                    onClick={(e) => e.preventDefault()}
                   >
                     <span className="text-nowrap">{t('secondary')}</span>
                   </Button>

@@ -15,11 +15,11 @@ export default function CallToActionSection() {
           <p className="mt-4 text-muted-foreground">{t('description')}</p>
 
           <div className="mt-12 flex flex-wrap justify-center gap-4">
-            <Button size="lg" disabled>
+            <Button size="lg" onClick={(e) => e.preventDefault()}>
               <span>{t('primaryButton')}</span>
             </Button>
 
-            <Button size="lg" variant="outline" disabled>
+            <Button size="lg" variant="outline" onClick={(e) => e.preventDefault()}>
               <span>{t('secondaryButton')}</span>
             </Button>
           </div>
