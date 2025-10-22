@@ -1,4 +1,4 @@
-import { MkSaaSLogo } from '@/components/layout/logo-mksaas';
+import { BoatLogo } from '@/components/layout/logo-mksaas';
 import { buttonVariants } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
@@ -15,9 +15,9 @@ export default function BuiltWithButton() {
     >
       <span>Built with</span>
       <span>
-        <MkSaaSLogo className="size-5 rounded-full" />
+        <BoatLogo className="size-5 rounded-full" />
       </span>
-      <span className="font-semibold">MkSaaS</span>
+      <span className="font-semibold">青舟科技</span>
     </Link>
   );
 }

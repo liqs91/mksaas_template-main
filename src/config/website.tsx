@@ -25,13 +25,13 @@ export const websiteConfig: WebsiteConfig = {
       logoDark: '/logo-dark.png',
     },
     social: {
-      github: 'https://github.com/MkSaaSHQ',
-      twitter: 'https://mksaas.link/twitter',
-      blueSky: 'https://mksaas.link/bsky',
-      discord: 'https://mksaas.link/discord',
-      mastodon: 'https://mksaas.link/mastodon',
-      linkedin: 'https://mksaas.link/linkedin',
-      youtube: 'https://mksaas.link/youtube',
+      github: 'https://github.com/BoatHQ',
+      twitter: 'https://boat.link/twitter',
+      blueSky: 'https://boat.link/bsky',
+      discord: 'https://boat.link/discord',
+      mastodon: 'https://boat.link/mastodon',
+      linkedin: 'https://boat.link/linkedin',
+      youtube: 'https://boat.link/youtube',
     },
   },
   features: {
@@ -56,7 +56,7 @@ export const websiteConfig: WebsiteConfig = {
     enableCredentialLogin: true,
   },
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'zh',
     locales: {
       en: {
         flag: '🇺🇸',
@@ -80,8 +80,8 @@ export const websiteConfig: WebsiteConfig = {
   },
   mail: {
     provider: 'resend',
-    fromEmail: 'MkSaaS <support@mksaas.com>',
-    supportEmail: 'MkSaaS <support@mksaas.com>',
+    fromEmail: '青舟科技 <support@boat.com>',
+    supportEmail: '青舟科技 <support@boat.com>',
   },
   newsletter: {
     enable: true,
