@@ -31,33 +31,8 @@ export default async function middleware(req: NextRequest) {
   const { nextUrl } = req;
   console.log('>> middleware start, pathname', nextUrl.pathname);
 
-  // 检查是否已经有语言前缀
-  const hasLanguagePrefix = LOCALES.some(locale => 
-    nextUrl.pathname.startsWith(`/${locale}/`) || nextUrl.pathname === `/${locale}`
-  );
-  
-  // 如果有语言前缀，直接应用国际化中间件
-  if (hasLanguagePrefix) {
-    console.log('<< middleware end, has language prefix, applying intlMiddleware');
-    return intlMiddleware(req);
-  }
-
-  // 对于没有语言前缀的路径，重定向到默认语言版本（除了 API 路由和静态资源）
-  if (!nextUrl.pathname.startsWith('/api/') && 
-      !nextUrl.pathname.startsWith('/_next/') && 
-      !nextUrl.pathname.startsWith('/favicon') &&
-      !nextUrl.pathname.startsWith('/robots.txt') &&
-      !nextUrl.pathname.startsWith('/sitemap.xml') &&
-      !nextUrl.pathname.startsWith('/manifest.webmanifest')) {
-    
-    // 使用默认语言而不是硬编码中文
-    const defaultPath = `/${DEFAULT_LOCALE}${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
-    console.log('<< middleware end, redirecting to default language:', defaultPath);
-    return NextResponse.redirect(new URL(defaultPath, nextUrl));
-  }
-
-  // 对于其他路径（API等），直接应用国际化中间件
-  console.log('<< middleware end, applying intlMiddleware for API/static');
+  // 直接使用 next-intl 的中间件，让它处理所有国际化逻辑
+  console.log('<< middleware end, applying intlMiddleware');
   return intlMiddleware(req);
 }
 
