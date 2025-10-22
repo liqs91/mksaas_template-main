@@ -31,7 +31,7 @@ export default async function middleware(req: NextRequest) {
   const { nextUrl } = req;
   console.log('>> middleware start, pathname', nextUrl.pathname);
 
-  // 强制重定向到中文页面（除了 API 路由和静态资源）
+  // 只在用户没有明确选择语言时才重定向到中文（除了 API 路由和静态资源）
   if (!nextUrl.pathname.startsWith('/api/') && 
       !nextUrl.pathname.startsWith('/_next/') && 
       !nextUrl.pathname.startsWith('/favicon') &&
@@ -39,22 +39,24 @@ export default async function middleware(req: NextRequest) {
       !nextUrl.pathname.startsWith('/sitemap.xml') &&
       !nextUrl.pathname.startsWith('/manifest.webmanifest')) {
     
-    // 检查是否已经是中文路径
-    const isChinesePath = nextUrl.pathname.startsWith('/zh/') || nextUrl.pathname === '/zh';
+    // 检查是否已经有语言前缀
+    const hasLanguagePrefix = LOCALES.some(locale => 
+      nextUrl.pathname.startsWith(`/${locale}/`) || nextUrl.pathname === `/${locale}`
+    );
     const isRootPath = nextUrl.pathname === '/';
     
-    // 如果不是中文路径且不是根路径，重定向到中文版本
-    if (!isChinesePath && !isRootPath) {
-      const chinesePath = `/zh${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
-      console.log('<< middleware end, redirecting to Chinese:', chinesePath);
-      return NextResponse.redirect(new URL(chinesePath, nextUrl));
-    }
-    
-    // 如果是根路径，重定向到中文首页
-    if (isRootPath) {
+    // 如果没有语言前缀且是根路径，重定向到中文首页
+    if (!hasLanguagePrefix && isRootPath) {
       const chineseHomePath = `/zh${nextUrl.search}${nextUrl.hash}`;
       console.log('<< middleware end, redirecting root to Chinese:', chineseHomePath);
       return NextResponse.redirect(new URL(chineseHomePath, nextUrl));
+    }
+    
+    // 如果没有语言前缀且不是根路径，重定向到中文版本
+    if (!hasLanguagePrefix && !isRootPath) {
+      const chinesePath = `/zh${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
+      console.log('<< middleware end, redirecting to Chinese:', chinesePath);
+      return NextResponse.redirect(new URL(chinesePath, nextUrl));
     }
   }
 
