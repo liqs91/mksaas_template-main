@@ -13,7 +13,7 @@ interface LocaleState {
  * https://zustand.docs.pmnd.rs/apis/create
  */
 export const useLocaleStore = create<LocaleState>((set) => ({
-  currentLocale: '', // don't change, it will affect the language detection switch judgment
+  currentLocale: 'en' as Locale, // 设置默认语言为英文
   setCurrentLocale: (locale) =>
     set((state) => ({
       currentLocale: locale,

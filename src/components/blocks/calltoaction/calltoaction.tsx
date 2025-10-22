@@ -1,3 +1,5 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import { LocaleLink } from '@/i18n/navigation';
 import { useTranslations } from 'next-intl';

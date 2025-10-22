@@ -31,7 +31,18 @@ export default async function middleware(req: NextRequest) {
   const { nextUrl } = req;
   console.log('>> middleware start, pathname', nextUrl.pathname);
 
-  // 只在用户没有明确选择语言时才重定向到中文（除了 API 路由和静态资源）
+  // 检查是否已经有语言前缀
+  const hasLanguagePrefix = LOCALES.some(locale => 
+    nextUrl.pathname.startsWith(`/${locale}/`) || nextUrl.pathname === `/${locale}`
+  );
+  
+  // 如果有语言前缀，直接应用国际化中间件
+  if (hasLanguagePrefix) {
+    console.log('<< middleware end, has language prefix, applying intlMiddleware');
+    return intlMiddleware(req);
+  }
+
+  // 对于没有语言前缀的路径，重定向到默认语言版本（除了 API 路由和静态资源）
   if (!nextUrl.pathname.startsWith('/api/') && 
       !nextUrl.pathname.startsWith('/_next/') && 
       !nextUrl.pathname.startsWith('/favicon') &&
@@ -39,83 +50,14 @@ export default async function middleware(req: NextRequest) {
       !nextUrl.pathname.startsWith('/sitemap.xml') &&
       !nextUrl.pathname.startsWith('/manifest.webmanifest')) {
     
-    // 检查是否已经有语言前缀
-    const hasLanguagePrefix = LOCALES.some(locale => 
-      nextUrl.pathname.startsWith(`/${locale}/`) || nextUrl.pathname === `/${locale}`
-    );
-    const isRootPath = nextUrl.pathname === '/';
-    
-    // 如果没有语言前缀且是根路径，重定向到中文首页
-    if (!hasLanguagePrefix && isRootPath) {
-      const chineseHomePath = `/zh${nextUrl.search}${nextUrl.hash}`;
-      console.log('<< middleware end, redirecting root to Chinese:', chineseHomePath);
-      return NextResponse.redirect(new URL(chineseHomePath, nextUrl));
-    }
-    
-    // 如果没有语言前缀且不是根路径，重定向到中文版本
-    if (!hasLanguagePrefix && !isRootPath) {
-      const chinesePath = `/zh${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
-      console.log('<< middleware end, redirecting to Chinese:', chinesePath);
-      return NextResponse.redirect(new URL(chinesePath, nextUrl));
-    }
+    // 使用默认语言而不是硬编码中文
+    const defaultPath = `/${DEFAULT_LOCALE}${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
+    console.log('<< middleware end, redirecting to default language:', defaultPath);
+    return NextResponse.redirect(new URL(defaultPath, nextUrl));
   }
 
-  // do not use getSession() here, it will cause error related to edge runtime
-  // const session = await getSession();
-  const { data: session } = await betterFetch<Session>(
-    '/api/auth/get-session',
-    {
-      baseURL: getBaseUrl(),
-      headers: {
-        cookie: req.headers.get('cookie') || '', // Forward the cookies from the request
-      },
-    }
-  );
-  const isLoggedIn = !!session;
-  // console.log('middleware, isLoggedIn', isLoggedIn);
-
-  // Get the pathname of the request (e.g. /zh/dashboard to /dashboard)
-  const pathnameWithoutLocale = getPathnameWithoutLocale(
-    nextUrl.pathname,
-    LOCALES
-  );
-
-  // If the route can not be accessed by logged in users, redirect if the user is logged in
-  if (isLoggedIn) {
-    const isNotAllowedRoute = routesNotAllowedByLoggedInUsers.some((route) =>
-      new RegExp(`^${route}$`).test(pathnameWithoutLocale)
-    );
-    if (isNotAllowedRoute) {
-      console.log(
-        '<< middleware end, not allowed route, already logged in, redirecting to dashboard'
-      );
-      return NextResponse.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));
-    }
-  }
-
-  const isProtectedRoute = protectedRoutes.some((route) =>
-    new RegExp(`^${route}$`).test(pathnameWithoutLocale)
-  );
-  // console.log('middleware, isProtectedRoute', isProtectedRoute);
-
-  // If the route is a protected route, redirect to login if user is not logged in
-  if (!isLoggedIn && isProtectedRoute) {
-    let callbackUrl = nextUrl.pathname;
-    if (nextUrl.search) {
-      callbackUrl += nextUrl.search;
-    }
-    const encodedCallbackUrl = encodeURIComponent(callbackUrl);
-    console.log(
-      '<< middleware end, not logged in, redirecting to login, callbackUrl',
-      callbackUrl
-    );
-    return NextResponse.redirect(
-      new URL(`/auth/login?callbackUrl=${encodedCallbackUrl}`, nextUrl)
-    );
-  }
-
-  // Apply intlMiddleware for all routes
-  console.log('<< middleware end, applying intlMiddleware');
+  // 对于其他路径（API等），直接应用国际化中间件
+  console.log('<< middleware end, applying intlMiddleware for API/static');
   return intlMiddleware(req);
 }
 

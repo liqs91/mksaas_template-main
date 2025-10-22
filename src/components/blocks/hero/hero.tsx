@@ -1,3 +1,5 @@
+'use client';
+
 import { Ripple } from '@/components/magicui/ripple';
 import { AnimatedGroup } from '@/components/tailark/motion/animated-group';
 import { TextEffect } from '@/components/tailark/motion/text-effect';
