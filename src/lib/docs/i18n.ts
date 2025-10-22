@@ -7,7 +7,7 @@ import type { I18nConfig } from 'fumadocs-core/i18n';
  * https://fumadocs.dev/docs/ui/internationalization
  */
 export const docsI18nConfig: I18nConfig = {
-  defaultLanguage: DEFAULT_LOCALE,
+  defaultLanguage: 'en', // 改为英文作为默认语言避免构建问题
   languages: LOCALES,
   hideLocale: 'default-locale',
 };

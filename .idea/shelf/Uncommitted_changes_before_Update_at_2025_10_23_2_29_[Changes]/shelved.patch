@@ -1,0 +1,191 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d28bf1b6-be6a-477a-b60b-d46c9c03cfcb\" name=\"Changes\" comment=\"调整项目结构\">\n      <change afterPath=\"$PROJECT_DIR$/public/qzboatlogo.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/messages/en.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/messages/en.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/messages/zh.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/messages/zh.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/android-chrome-192x192.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/android-chrome-192x192.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/android-chrome-512x512.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/android-chrome-512x512.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/apple-touch-icon.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/apple-touch-icon.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/favicon-16x16.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/favicon-16x16.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/favicon-32x32.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/favicon-32x32.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/logo-dark.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/logo-dark.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/logo.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/logo.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/public/mksaas.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/public/mksaas.png\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/components/layout/logo-mksaas.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/components/layout/logo-mksaas.tsx\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/config/website.tsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/config/website.tsx\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"customColor\": \"\",\n  \"associatedIndex\": 6\n}]]></component>\n  <component name=\"ProjectId\" id=\"34QMTEHMXgeEAIPaFnNwAGgBYzh\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"autoscrollFromSource\" value=\"true\" />\n    <option name=\"autoscrollToSource\" value=\"true\" />\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"openDirectoriesWithSingleClick\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"git-widget-placeholder\": \"main\",\n    \"last_opened_file_path\": \"E:/project/mksaas_template-main/public\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"pnpm\",\n    \"ts.external.directory.path\": \"E:\\\\project\\\\mksaas_template-main\\\\node_modules\\\\typescript\\\\lib\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"E:\\project\\mksaas_template-main\\public\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"build\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"build\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"dev\" type=\"js.build_tools.npm\" temporary=\"true\" nameIsGenerated=\"true\">\n      <package-json value=\"$PROJECT_DIR$/package.json\" />\n      <command value=\"run\" />\n      <scripts>\n        <script value=\"dev\" />\n      </scripts>\n      <node-interpreter value=\"project\" />\n      <envs />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"npm.dev\" />\n        <item itemvalue=\"npm.build\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d28bf1b6-be6a-477a-b60b-d46c9c03cfcb\" name=\"Changes\" comment=\"\" />\n      <created>1761141348168</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1761141348168</updated>\n      <workItem from=\"1761141350479\" duration=\"3483000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"调整项目结构\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1761141817932</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1761141817932</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"调整项目结构\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"调整项目结构\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 1ec7c0bd130764f2fbbf610e3aef3ae724e19fc7)
++++ b/.idea/workspace.xml	(date 1761157611227)
+@@ -4,21 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d28bf1b6-be6a-477a-b60b-d46c9c03cfcb" name="Changes" comment="调整项目结构">
+-      <change afterPath="$PROJECT_DIR$/public/qzboatlogo.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/en.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/messages/zh.json" beforeDir="false" afterPath="$PROJECT_DIR$/messages/zh.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/android-chrome-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/android-chrome-192x192.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/android-chrome-512x512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/android-chrome-512x512.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon-16x16.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon-32x32.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/logo-dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo-dark.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/public/mksaas.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/mksaas.png" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/components/layout/logo-mksaas.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/logo-mksaas.tsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/config/website.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/website.tsx" afterDir="false" />
+-    </list>
++    <list default="true" id="d28bf1b6-be6a-477a-b60b-d46c9c03cfcb" name="Changes" comment="调整项目结构" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -30,10 +16,10 @@
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "customColor": "",
+-  "associatedIndex": 6
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;customColor&quot;: &quot;&quot;,
++  &quot;associatedIndex&quot;: 6
++}</component>
+   <component name="ProjectId" id="34QMTEHMXgeEAIPaFnNwAGgBYzh" />
+   <component name="ProjectViewState">
+     <option name="autoscrollFromSource" value="true" />
+@@ -42,28 +28,28 @@
+     <option name="openDirectoriesWithSingleClick" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "main",
+-    "last_opened_file_path": "E:/project/mksaas_template-main/public",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "pnpm",
+-    "ts.external.directory.path": "E:\\project\\mksaas_template-main\\node_modules\\typescript\\lib",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
++    &quot;last_opened_file_path&quot;: &quot;E:/project/mksaas_template-main/public&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;E:\\project\\mksaas_template-main\\node_modules\\typescript\\lib&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="E:\project\mksaas_template-main\public" />
+     </key>
+   </component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="npm.build">
+     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+       <package-json value="$PROJECT_DIR$/package.json" />
+       <command value="run" />
+Index: src/lib/docs/i18n.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { DEFAULT_LOCALE, LOCALES } from '@/i18n/routing';\nimport type { I18nConfig } from 'fumadocs-core/i18n';\n\n/**\n * Internationalization configuration for FumaDocs\n *\n * https://fumadocs.dev/docs/ui/internationalization\n */\nexport const docsI18nConfig: I18nConfig = {\n  defaultLanguage: DEFAULT_LOCALE,\n  languages: LOCALES,\n  hideLocale: 'default-locale',\n};\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/lib/docs/i18n.ts b/src/lib/docs/i18n.ts
+--- a/src/lib/docs/i18n.ts	(revision 1ec7c0bd130764f2fbbf610e3aef3ae724e19fc7)
++++ b/src/lib/docs/i18n.ts	(date 1761157671396)
+@@ -7,7 +7,7 @@
+  * https://fumadocs.dev/docs/ui/internationalization
+  */
+ export const docsI18nConfig: I18nConfig = {
+-  defaultLanguage: DEFAULT_LOCALE,
++  defaultLanguage: 'en', // 保持英文作为默认语言避免构建问题
+   languages: LOCALES,
+   hideLocale: 'default-locale',
+ };
+Index: src/config/website.tsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { PaymentTypes, PlanIntervals } from '@/payment/types';\nimport type { WebsiteConfig } from '@/types';\n\n/**\n * website config, without translations\n *\n * docs:\n * https://mksaas.com/docs/config/website\n */\nexport const websiteConfig: WebsiteConfig = {\n  ui: {\n    theme: {\n      defaultTheme: 'default',\n      enableSwitch: true,\n    },\n    mode: {\n      defaultMode: 'dark',\n      enableSwitch: true,\n    },\n  },\n  metadata: {\n    images: {\n      ogImage: '/og.png',\n      logoLight: '/logo.png',\n      logoDark: '/logo-dark.png',\n    },\n    social: {\n      github: 'https://github.com/BoatHQ',\n      twitter: 'https://boat.link/twitter',\n      blueSky: 'https://boat.link/bsky',\n      discord: 'https://boat.link/discord',\n      mastodon: 'https://boat.link/mastodon',\n      linkedin: 'https://boat.link/linkedin',\n      youtube: 'https://boat.link/youtube',\n    },\n  },\n  features: {\n    enableUpgradeCard: true,\n    enableUpdateAvatar: true,\n    enableAffonsoAffiliate: false,\n    enablePromotekitAffiliate: false,\n    enableDatafastRevenueTrack: false,\n    enableCrispChat: process.env.NEXT_PUBLIC_DEMO_WEBSITE === 'true',\n    enableTurnstileCaptcha: process.env.NEXT_PUBLIC_DEMO_WEBSITE === 'true',\n  },\n  routes: {\n    defaultLoginRedirect: '/dashboard',\n  },\n  analytics: {\n    enableVercelAnalytics: false,\n    enableSpeedInsights: false,\n  },\n  auth: {\n    enableGoogleLogin: true,\n    enableGithubLogin: true,\n    enableCredentialLogin: true,\n  },\n  i18n: {\n    defaultLocale: 'zh',\n    locales: {\n      en: {\n        flag: '\uD83C\uDDFA\uD83C\uDDF8',\n        name: 'English',\n        hreflang: 'en',\n      },\n      zh: {\n        flag: '\uD83C\uDDE8\uD83C\uDDF3',\n        name: '中文',\n        hreflang: 'zh-CN',\n      },\n    },\n  },\n  blog: {\n    enable: true,\n    paginationSize: 6,\n    relatedPostsSize: 3,\n  },\n  docs: {\n    enable: true,\n  },\n  mail: {\n    provider: 'resend',\n    fromEmail: '青舟科技 <support@boat.com>',\n    supportEmail: '青舟科技 <support@boat.com>',\n  },\n  newsletter: {\n    enable: true,\n    provider: 'resend',\n    autoSubscribeAfterSignUp: true,\n  },\n  storage: {\n    enable: true,\n    provider: 's3',\n  },\n  payment: {\n    provider: 'stripe',\n  },\n  price: {\n    plans: {\n      free: {\n        id: 'free',\n        prices: [],\n        isFree: true,\n        isLifetime: false,\n        credits: {\n          enable: true,\n          amount: 50,\n          expireDays: 30,\n        },\n      },\n      pro: {\n        id: 'pro',\n        prices: [\n          {\n            type: PaymentTypes.SUBSCRIPTION,\n            priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_PRO_MONTHLY!,\n            amount: 990,\n            currency: 'USD',\n            interval: PlanIntervals.MONTH,\n          },\n          {\n            type: PaymentTypes.SUBSCRIPTION,\n            priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_PRO_YEARLY!,\n            amount: 9900,\n            currency: 'USD',\n            interval: PlanIntervals.YEAR,\n          },\n        ],\n        isFree: false,\n        isLifetime: false,\n        popular: true,\n        credits: {\n          enable: true,\n          amount: 1000,\n          expireDays: 30,\n        },\n      },\n      lifetime: {\n        id: 'lifetime',\n        prices: [\n          {\n            type: PaymentTypes.ONE_TIME,\n            priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_LIFETIME!,\n            amount: 19900,\n            currency: 'USD',\n            allowPromotionCode: true,\n          },\n        ],\n        isFree: false,\n        isLifetime: true,\n        credits: {\n          enable: true,\n          amount: 1000,\n          expireDays: 30,\n        },\n      },\n    },\n  },\n  credits: {\n    enableCredits: true,\n    enablePackagesForFreePlan: false,\n    registerGiftCredits: {\n      enable: true,\n      amount: 50,\n      expireDays: 30,\n    },\n    packages: {\n      basic: {\n        id: 'basic',\n        popular: false,\n        amount: 100,\n        expireDays: 30,\n        price: {\n          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_BASIC!,\n          amount: 990,\n          currency: 'USD',\n          allowPromotionCode: true,\n        },\n      },\n      standard: {\n        id: 'standard',\n        popular: true,\n        amount: 200,\n        expireDays: 30,\n        price: {\n          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_STANDARD!,\n          amount: 1490,\n          currency: 'USD',\n          allowPromotionCode: true,\n        },\n      },\n      premium: {\n        id: 'premium',\n        popular: false,\n        amount: 500,\n        expireDays: 30,\n        price: {\n          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_PREMIUM!,\n          amount: 3990,\n          currency: 'USD',\n          allowPromotionCode: true,\n        },\n      },\n      enterprise: {\n        id: 'enterprise',\n        popular: false,\n        amount: 1000,\n        expireDays: 30,\n        price: {\n          priceId: process.env.NEXT_PUBLIC_STRIPE_PRICE_CREDITS_ENTERPRISE!,\n          amount: 6990,\n          currency: 'USD',\n          allowPromotionCode: true,\n        },\n      },\n    },\n  },\n};\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/config/website.tsx b/src/config/website.tsx
+--- a/src/config/website.tsx	(revision 1ec7c0bd130764f2fbbf610e3aef3ae724e19fc7)
++++ b/src/config/website.tsx	(date 1761157668932)
+@@ -56,7 +56,7 @@
+     enableCredentialLogin: true,
+   },
+   i18n: {
+-    defaultLocale: 'zh',
++    defaultLocale: 'en', // 保持英文作为默认语言避免构建问题
+     locales: {
+       en: {
+         flag: '🇺🇸',
+Index: src/middleware.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { betterFetch } from '@better-fetch/fetch';\nimport createMiddleware from 'next-intl/middleware';\nimport { type NextRequest, NextResponse } from 'next/server';\nimport {\n  DEFAULT_LOCALE,\n  LOCALES,\n  LOCALE_COOKIE_NAME,\n  routing,\n} from './i18n/routing';\nimport type { Session } from './lib/auth-types';\nimport { getBaseUrl } from './lib/urls/urls';\nimport {\n  DEFAULT_LOGIN_REDIRECT,\n  protectedRoutes,\n  routesNotAllowedByLoggedInUsers,\n} from './routes';\n\nconst intlMiddleware = createMiddleware(routing);\n\n/**\n * 1. Next.js middleware\n * https://nextjs.org/docs/app/building-your-application/routing/middleware\n *\n * 2. Better Auth middleware\n * https://www.better-auth.com/docs/integrations/next#middleware\n *\n * In Next.js middleware, it's recommended to only check for the existence of a session cookie\n * to handle redirection. To avoid blocking requests by making API or database calls.\n */\nexport default async function middleware(req: NextRequest) {\n  const { nextUrl } = req;\n  console.log('>> middleware start, pathname', nextUrl.pathname);\n\n  // Handle internal docs link redirection for internationalization\n  // Check if this is a docs page without locale prefix\n  if (nextUrl.pathname.startsWith('/docs/') || nextUrl.pathname === '/docs') {\n    // Get the user's preferred locale from cookie\n    const localeCookie = req.cookies.get(LOCALE_COOKIE_NAME);\n    const preferredLocale = localeCookie?.value;\n\n    // If user has a non-default locale preference, redirect to localized version\n    if (\n      preferredLocale &&\n      preferredLocale !== DEFAULT_LOCALE &&\n      LOCALES.includes(preferredLocale)\n    ) {\n      const localizedPath = `/${preferredLocale}${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;\n      console.log(\n        '<< middleware end, redirecting docs link to preferred locale:',\n        localizedPath\n      );\n      return NextResponse.redirect(new URL(localizedPath, nextUrl));\n    }\n  }\n\n  // do not use getSession() here, it will cause error related to edge runtime\n  // const session = await getSession();\n  const { data: session } = await betterFetch<Session>(\n    '/api/auth/get-session',\n    {\n      baseURL: getBaseUrl(),\n      headers: {\n        cookie: req.headers.get('cookie') || '', // Forward the cookies from the request\n      },\n    }\n  );\n  const isLoggedIn = !!session;\n  // console.log('middleware, isLoggedIn', isLoggedIn);\n\n  // Get the pathname of the request (e.g. /zh/dashboard to /dashboard)\n  const pathnameWithoutLocale = getPathnameWithoutLocale(\n    nextUrl.pathname,\n    LOCALES\n  );\n\n  // If the route can not be accessed by logged in users, redirect if the user is logged in\n  if (isLoggedIn) {\n    const isNotAllowedRoute = routesNotAllowedByLoggedInUsers.some((route) =>\n      new RegExp(`^${route}$`).test(pathnameWithoutLocale)\n    );\n    if (isNotAllowedRoute) {\n      console.log(\n        '<< middleware end, not allowed route, already logged in, redirecting to dashboard'\n      );\n      return NextResponse.redirect(new URL(DEFAULT_LOGIN_REDIRECT, nextUrl));\n    }\n  }\n\n  const isProtectedRoute = protectedRoutes.some((route) =>\n    new RegExp(`^${route}$`).test(pathnameWithoutLocale)\n  );\n  // console.log('middleware, isProtectedRoute', isProtectedRoute);\n\n  // If the route is a protected route, redirect to login if user is not logged in\n  if (!isLoggedIn && isProtectedRoute) {\n    let callbackUrl = nextUrl.pathname;\n    if (nextUrl.search) {\n      callbackUrl += nextUrl.search;\n    }\n    const encodedCallbackUrl = encodeURIComponent(callbackUrl);\n    console.log(\n      '<< middleware end, not logged in, redirecting to login, callbackUrl',\n      callbackUrl\n    );\n    return NextResponse.redirect(\n      new URL(`/auth/login?callbackUrl=${encodedCallbackUrl}`, nextUrl)\n    );\n  }\n\n  // Apply intlMiddleware for all routes\n  console.log('<< middleware end, applying intlMiddleware');\n  return intlMiddleware(req);\n}\n\n/**\n * Get the pathname of the request (e.g. /zh/dashboard to /dashboard)\n */\nfunction getPathnameWithoutLocale(pathname: string, locales: string[]): string {\n  const localePattern = new RegExp(`^/(${locales.join('|')})/`);\n  return pathname.replace(localePattern, '/');\n}\n\n/**\n * Next.js internationalized routing\n * specify the routes the middleware applies to\n *\n * https://next-intl.dev/docs/routing#base-path\n */\nexport const config = {\n  // The `matcher` is relative to the `basePath`\n  matcher: [\n    // Match all pathnames except for\n    // - if they start with `/api`, `/_next` or `/_vercel`\n    // - if they contain a dot (e.g. `favicon.ico`)\n    '/((?!api|_next|_vercel|.*\\\\..*).*)',\n  ],\n};\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/middleware.ts b/src/middleware.ts
+--- a/src/middleware.ts	(revision 1ec7c0bd130764f2fbbf610e3aef3ae724e19fc7)
++++ b/src/middleware.ts	(date 1761157679349)
+@@ -31,25 +31,30 @@
+   const { nextUrl } = req;
+   console.log('>> middleware start, pathname', nextUrl.pathname);
+ 
+-  // Handle internal docs link redirection for internationalization
+-  // Check if this is a docs page without locale prefix
+-  if (nextUrl.pathname.startsWith('/docs/') || nextUrl.pathname === '/docs') {
+-    // Get the user's preferred locale from cookie
+-    const localeCookie = req.cookies.get(LOCALE_COOKIE_NAME);
+-    const preferredLocale = localeCookie?.value;
+-
+-    // If user has a non-default locale preference, redirect to localized version
+-    if (
+-      preferredLocale &&
+-      preferredLocale !== DEFAULT_LOCALE &&
+-      LOCALES.includes(preferredLocale)
+-    ) {
+-      const localizedPath = `/${preferredLocale}${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
+-      console.log(
+-        '<< middleware end, redirecting docs link to preferred locale:',
+-        localizedPath
+-      );
+-      return NextResponse.redirect(new URL(localizedPath, nextUrl));
++  // 强制重定向到中文页面（除了 API 路由和静态资源）
++  if (!nextUrl.pathname.startsWith('/api/') && 
++      !nextUrl.pathname.startsWith('/_next/') && 
++      !nextUrl.pathname.startsWith('/favicon') &&
++      !nextUrl.pathname.startsWith('/robots.txt') &&
++      !nextUrl.pathname.startsWith('/sitemap.xml') &&
++      !nextUrl.pathname.startsWith('/manifest.webmanifest')) {
++    
++    // 检查是否已经是中文路径
++    const isChinesePath = nextUrl.pathname.startsWith('/zh/') || nextUrl.pathname === '/zh';
++    const isRootPath = nextUrl.pathname === '/';
++    
++    // 如果不是中文路径且不是根路径，重定向到中文版本
++    if (!isChinesePath && !isRootPath) {
++      const chinesePath = `/zh${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
++      console.log('<< middleware end, redirecting to Chinese:', chinesePath);
++      return NextResponse.redirect(new URL(chinesePath, nextUrl));
++    }
++    
++    // 如果是根路径，重定向到中文首页
++    if (isRootPath) {
++      const chineseHomePath = `/zh${nextUrl.search}${nextUrl.hash}`;
++      console.log('<< middleware end, redirecting root to Chinese:', chineseHomePath);
++      return NextResponse.redirect(new URL(chineseHomePath, nextUrl));
+     }
+   }
+ 

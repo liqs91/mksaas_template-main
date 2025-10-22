@@ -56,7 +56,7 @@ export const websiteConfig: WebsiteConfig = {
     enableCredentialLogin: true,
   },
   i18n: {
-    defaultLocale: 'zh',
+    defaultLocale: 'en', // 改为英文作为默认语言避免构建问题
     locales: {
       en: {
         flag: '🇺🇸',

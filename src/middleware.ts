@@ -31,25 +31,30 @@ export default async function middleware(req: NextRequest) {
   const { nextUrl } = req;
   console.log('>> middleware start, pathname', nextUrl.pathname);
 
-  // Handle internal docs link redirection for internationalization
-  // Check if this is a docs page without locale prefix
-  if (nextUrl.pathname.startsWith('/docs/') || nextUrl.pathname === '/docs') {
-    // Get the user's preferred locale from cookie
-    const localeCookie = req.cookies.get(LOCALE_COOKIE_NAME);
-    const preferredLocale = localeCookie?.value;
-
-    // If user has a non-default locale preference, redirect to localized version
-    if (
-      preferredLocale &&
-      preferredLocale !== DEFAULT_LOCALE &&
-      LOCALES.includes(preferredLocale)
-    ) {
-      const localizedPath = `/${preferredLocale}${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
-      console.log(
-        '<< middleware end, redirecting docs link to preferred locale:',
-        localizedPath
-      );
-      return NextResponse.redirect(new URL(localizedPath, nextUrl));
+  // 强制重定向到中文页面（除了 API 路由和静态资源）
+  if (!nextUrl.pathname.startsWith('/api/') && 
+      !nextUrl.pathname.startsWith('/_next/') && 
+      !nextUrl.pathname.startsWith('/favicon') &&
+      !nextUrl.pathname.startsWith('/robots.txt') &&
+      !nextUrl.pathname.startsWith('/sitemap.xml') &&
+      !nextUrl.pathname.startsWith('/manifest.webmanifest')) {
+    
+    // 检查是否已经是中文路径
+    const isChinesePath = nextUrl.pathname.startsWith('/zh/') || nextUrl.pathname === '/zh';
+    const isRootPath = nextUrl.pathname === '/';
+    
+    // 如果不是中文路径且不是根路径，重定向到中文版本
+    if (!isChinesePath && !isRootPath) {
+      const chinesePath = `/zh${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
+      console.log('<< middleware end, redirecting to Chinese:', chinesePath);
+      return NextResponse.redirect(new URL(chinesePath, nextUrl));
+    }
+    
+    // 如果是根路径，重定向到中文首页
+    if (isRootPath) {
+      const chineseHomePath = `/zh${nextUrl.search}${nextUrl.hash}`;
+      console.log('<< middleware end, redirecting root to Chinese:', chineseHomePath);
+      return NextResponse.redirect(new URL(chineseHomePath, nextUrl));
     }
   }
 
