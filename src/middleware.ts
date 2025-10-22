@@ -55,16 +55,30 @@ export default async function middleware(req: NextRequest) {
 
   // do not use getSession() here, it will cause error related to edge runtime
   // const session = await getSession();
-  const { data: session } = await betterFetch<Session>(
-    '/api/auth/get-session',
-    {
-      baseURL: getBaseUrl(),
-      headers: {
-        cookie: req.headers.get('cookie') || '', // Forward the cookies from the request
-      },
-    }
-  );
-  const isLoggedIn = !!session;
+  
+  // Skip session check for API routes to avoid middleware issues
+  if (nextUrl.pathname.startsWith('/api/')) {
+    console.log('<< middleware end, skipping session check for API route');
+    return intlMiddleware(req);
+  }
+  
+  let isLoggedIn = false;
+  try {
+    const { data: session } = await betterFetch<Session>(
+      '/api/auth/get-session',
+      {
+        baseURL: getBaseUrl(),
+        headers: {
+          cookie: req.headers.get('cookie') || '', // Forward the cookies from the request
+        },
+      }
+    );
+    isLoggedIn = !!session;
+  } catch (error) {
+    console.warn('Failed to get session in middleware:', error);
+    // Continue without session check if API call fails
+    isLoggedIn = false;
+  }
   // console.log('middleware, isLoggedIn', isLoggedIn);
 
   // Get the pathname of the request (e.g. /zh/dashboard to /dashboard)
