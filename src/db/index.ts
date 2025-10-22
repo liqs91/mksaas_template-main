@@ -1,9 +1,9 @@
 /**
- * Connect to MySQL Database
- * https://orm.drizzle.team/docs/tutorials/drizzle-with-mysql
+ * Connect to PostgreSQL Database
+ * https://orm.drizzle.team/docs/tutorials/drizzle-with-postgres
  */
-import { drizzle } from 'drizzle-orm/mysql2';
-import mysql from 'mysql2/promise';
+import { drizzle } from 'drizzle-orm/postgres-js';
+import postgres from 'postgres';
 import * as schema from './schema';
 
 let db: ReturnType<typeof drizzle> | null = null;
@@ -11,7 +11,7 @@ let db: ReturnType<typeof drizzle> | null = null;
 export async function getDb() {
   if (db) return db;
   const connectionString = process.env.DATABASE_URL!;
-  const connection = await mysql.createConnection(connectionString);
+  const connection = postgres(connectionString);
   db = drizzle(connection, { schema });
   return db;
 }
