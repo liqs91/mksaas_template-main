@@ -52,8 +52,8 @@ export default function HeroSection() {
               <Ripple />
 
               <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-                {/* introduction */}
-                <AnimatedGroup variants={transitionVariants}>
+                {/* introduction - 已隐藏 */}
+                {/* <AnimatedGroup variants={transitionVariants}>
                   <LocaleLink
                     href={linkIntroduction}
                     className="hover:bg-accent group mx-auto flex w-fit items-center gap-2 rounded-full border p-1 pl-4"
@@ -73,7 +73,7 @@ export default function HeroSection() {
                       </div>
                     </div>
                   </LocaleLink>
-                </AnimatedGroup>
+                </AnimatedGroup> */}
 
                 {/* title */}
                 <TextEffect
@@ -98,7 +98,7 @@ export default function HeroSection() {
                   {t('description')}
                 </TextEffect>
 
-                {/* action buttons */}
+                {/* action buttons - 已屏蔽跳转功能 */}
                 <AnimatedGroup
                   variants={{
                     container: {
@@ -118,25 +118,21 @@ export default function HeroSection() {
                     className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
                   >
                     <Button
-                      asChild
                       size="lg"
                       className="rounded-xl px-5 text-base"
+                      disabled
                     >
-                      <LocaleLink href={linkPrimary}>
-                        <span className="text-nowrap">{t('primary')}</span>
-                      </LocaleLink>
+                      <span className="text-nowrap">{t('primary')}</span>
                     </Button>
                   </div>
                   <Button
                     key={2}
-                    asChild
                     size="lg"
                     variant="outline"
                     className="h-10.5 rounded-xl px-5"
+                    disabled
                   >
-                    <LocaleLink href={linkSecondary}>
-                      <span className="text-nowrap">{t('secondary')}</span>
-                    </LocaleLink>
+                    <span className="text-nowrap">{t('secondary')}</span>
                   </Button>
                 </AnimatedGroup>
               </div>

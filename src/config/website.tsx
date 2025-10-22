@@ -71,12 +71,12 @@ export const websiteConfig: WebsiteConfig = {
     },
   },
   blog: {
-    enable: true,
+    enable: false, // 隐藏博客菜单
     paginationSize: 6,
     relatedPostsSize: 3,
   },
   docs: {
-    enable: true,
+    enable: false, // 隐藏文档菜单
   },
   mail: {
     provider: 'resend',
