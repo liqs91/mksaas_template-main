@@ -78,11 +78,11 @@ export const websiteConfig: WebsiteConfig = {
   docs: {
     enable: false, // 隐藏文档菜单
   },
-  mail: {
-    provider: 'resend',
-    fromEmail: '青舟科技 <support@boat.com>',
-    supportEmail: '青舟科技 <support@boat.com>',
-  },
+        mail: {
+          provider: 'resend',
+          fromEmail: '青舟 <support@boat.com>',
+          supportEmail: '青舟 <support@boat.com>',
+        },
   newsletter: {
     enable: true,
     provider: 'resend',

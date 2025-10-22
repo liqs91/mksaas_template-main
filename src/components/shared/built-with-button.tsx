@@ -17,7 +17,7 @@ export default function BuiltWithButton() {
       <span>
         <BoatLogo className="size-5 rounded-full" />
       </span>
-      <span className="font-semibold">青舟科技</span>
+      <span className="font-semibold">青舟</span>
     </div>
   );
 }
